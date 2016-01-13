@@ -1,0 +1,36 @@
+nohup mvn spring-boot:run
+
+mvn clean install
+
+mvn package && java -jar target/gs-spring-boot-0.1.0.jar
+
+mvn package spring-boot:run
+mvn spring-boot:repackage spring-boot:run
+export MAVEN_OPTS=-Xmx1024m -XX:MaxPermSize=128M -Djava.security.egd=file:/dev/./urandom
+
+clean
+mvn clean package spring-boot:run -Drun.jvmArguments='-Dserver.port=8001'
+
+
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/redis-config-server/
+docker-compose up
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/docker-zipkin/
+docker-compose up
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/config-server
+mvn clean package spring-boot:run
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/eureka-server
+mvn clean package spring-boot:run
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/hystrix-dashboard
+mvn clean package spring-boot:run
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/reservation-service
+mvn clean package
+spring-boot:run -Drun.jvmArguments='-Dserver.port=8000'
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/reservation-service
+spring-boot:run -Drun.jvmArguments='-Dserver.port=8001'
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/reservation-client
+mvn clean package spring-boot:run
+
+http://docs.spring.io/spring-boot/docs/current/reference/html/howto-properties-and-configuration.html#howto-use-short-command-line-arguments
+https://github.com/joakim666/spring-boot-spring-loaded-java8-example/blob/master/pom.xml
+http://plainoldobjects.com/2014/04/01/building-microservices-with-spring-boot-part1/
+com.example.ReservationServiceApplication
