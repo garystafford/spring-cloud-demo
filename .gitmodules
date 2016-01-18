@@ -1,3 +1,6 @@
 [submodule "docker-zipkin"]
 	path = docker-zipkin
 	url = https://github.com/openzipkin/docker-zipkin.git
+[submodule "spring-cloud-demo-config-repo"]
+	path = spring-cloud-demo-config-repo
+	url = https://github.com/garystafford/spring-cloud-demo-config-repo.git

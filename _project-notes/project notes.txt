@@ -36,9 +36,16 @@ reservation-service
 reservation-client
 
 
+Config Repo
+=======================
+git submodule add git@github.com:garystafford/spring-cloud-demo-config-repo.git
+git submodule init
+git submodule update
+
+
 Redis
 =======================
-Spring Cloud Stream Redis: http://cloud.spring.io/spring-cloud-stream-modules/
+Spring Cloud Stream Redis: https://github.com/garystafford/spring-cloud-demo-config-repo.git
 
 mkdir redis-config-server
 
