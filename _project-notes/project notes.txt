@@ -1,3 +1,9 @@
+Cloning this Project
+=======================
+git clone --recursive git@github.com:garystafford/spring-cloud-demo.git # me
+git clone --recursive https://github.com/garystafford/spring-cloud-demo.git # everyone else
+
+
 Project URLs
 =======================
 Reservation Service:   http://localhost:8000/reservations # 8001, 8002, etc.
@@ -33,13 +39,19 @@ reservation-client
 Redis
 =======================
 Spring Cloud Stream Redis: http://cloud.spring.io/spring-cloud-stream-modules/
+
 mkdir redis-config-server
+
 cd redis-config-server
 docker-compose up
+
 running at 192.168.99.100:6379
 set spring.redis.host=192.168.99.100
+
 docker exec -it redisconfigserver_redis_1 /bin/bash
+
 redis-cli
+
 KEYS *
   1) "queue.output"
 LRANGE queue.output 0 -1
@@ -50,8 +62,12 @@ LRANGE queue.output 0 -1
 
 Zipkin
 =======================
-https://github.com/openzipkin/zipkin
-git clone https://github.com/openzipkin/docker-zipkin
+https://github.com/openzipkin/docker-zipkin
+
+git submodule add https://github.com/openzipkin/docker-zipkin.git
+git submodule init
+git submodule update
+
 cd docker-zipkin
 docker-compose up
 
