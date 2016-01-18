@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.stream.annotation.Output;
+import org.springframework.context.annotation.Description;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.hateoas.Resources;
 import org.springframework.messaging.Message;
@@ -42,6 +43,7 @@ class ReservationApiGatewayRestController {
     private String message;
 
 
+    @Description("Post new reservations using Spring Cloud Stream")
     @RequestMapping(method = POST)
     public void acceptNewReservations(@RequestBody Reservation r) {
         Message<String> build = withPayload(r.getReservationName()).build();
@@ -53,7 +55,7 @@ class ReservationApiGatewayRestController {
     }
 
     @HystrixCommand(fallbackMethod = "getReservationNameFallback")
-    @RequestMapping("/names")
+    @RequestMapping(path = "/names", method = RequestMethod.GET)
     public Collection<String> getReservationNames() {
 
         ParameterizedTypeReference<Resources<Reservation>> ptr =
@@ -70,7 +72,7 @@ class ReservationApiGatewayRestController {
 
     @RequestMapping(path = "/client-message", method = RequestMethod.GET)
     public String getMessage() {
-        return message;
+        return this.message;
     }
 
     @RequestMapping(path = "/service-message", method = RequestMethod.GET)
