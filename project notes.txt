@@ -1,12 +1,14 @@
 Project URLs
 =======================
-Reservation Service:   http://localhost:8000/reservations
-                       http://localhost:8001/reservations
+Reservation Service:   http://localhost:8000/reservations # 8001, 8002, etc.
+                       http://localhost:8000/reservations/search/by-name?rn=Amit
+
                        http://192.168.99.1:8000/configprops
 
 Reservation Client:    http://localhost:8050/reservation-service/reservations
                        http://localhost:8050/reservations/names
-                       http://localhost:8050/reservations (POST)
+                       http://localhost:8050/reservations # POST
+                       http://localhost:8050/reservations/service-message # client-message
 
 Eureka Server:         http://localhost:8761
 
@@ -14,6 +16,9 @@ Spring Cloud Config:   http://localhost:8888/reservation-service/master
 
 Hystrix Dashboard:     http://localhost:8050/hystrix.stream
                        http://localhost:8010/hystrix.html
+
+
+Zipkin:                http://192.168.99.100:8080/
 
 
 Start-up Order

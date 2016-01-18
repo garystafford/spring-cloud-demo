@@ -12,25 +12,41 @@ clean
 mvn clean package spring-boot:run -Drun.jvmArguments='-Dserver.port=8001'
 
 
+Docker Quickstart Terminal
 cd /Users/gstaffo/Documents/projects/spring-cloud-demo/redis-config-server/
 docker-compose up
+
+Docker Quickstart Terminal
 cd /Users/gstaffo/Documents/projects/spring-cloud-demo/docker-zipkin/
 docker-compose up
+
 cd /Users/gstaffo/Documents/projects/spring-cloud-demo/config-server
 mvn clean package spring-boot:run
+
 cd /Users/gstaffo/Documents/projects/spring-cloud-demo/eureka-server
 mvn clean package spring-boot:run
+
 cd /Users/gstaffo/Documents/projects/spring-cloud-demo/hystrix-dashboard
 mvn clean package spring-boot:run
+
 cd /Users/gstaffo/Documents/projects/spring-cloud-demo/reservation-service
 mvn clean package
-spring-boot:run -Drun.jvmArguments='-Dserver.port=8000'
+mvn spring-boot:run -Drun.jvmArguments='-Dserver.port=8000'
+
 cd /Users/gstaffo/Documents/projects/spring-cloud-demo/reservation-service
-spring-boot:run -Drun.jvmArguments='-Dserver.port=8001'
+mvn spring-boot:run -Drun.jvmArguments='-Dserver.port=8001'
+
+cd /Users/gstaffo/Documents/projects/spring-cloud-demo/reservation-service
+mvn spring-boot:run -Drun.jvmArguments='-Dserver.port=8002'
+
 cd /Users/gstaffo/Documents/projects/spring-cloud-demo/reservation-client
 mvn clean package spring-boot:run
 
+
+http://stackoverflow.com/questions/13708738/how-to-get-a-command-line-property-to-overwrite-a-maven-property
 http://docs.spring.io/spring-boot/docs/current/reference/html/howto-properties-and-configuration.html#howto-use-short-command-line-arguments
 https://github.com/joakim666/spring-boot-spring-loaded-java8-example/blob/master/pom.xml
 http://plainoldobjects.com/2014/04/01/building-microservices-with-spring-boot-part1/
 com.example.ReservationServiceApplication
+https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html
+https://spring.io/blog/2015/01/13/configuring-it-all-out-or-12-factor-app-style-configuration-with-spring
