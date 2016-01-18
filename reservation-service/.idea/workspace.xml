@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9687f0c-268e-47fa-b7d7-d1af601fd348" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-repo" afterPath="$PROJECT_DIR$/../config-repo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/Reservation.java" afterPath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/Reservation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/ReservationApiGatewayRestController.java" afterPath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/ReservationApiGatewayRestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/eureka-service.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/hystrix-dashboard.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/reservation-client.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/reservation-service.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../config-repo" afterPath="" />
     </list>
     <ignored path="reservation-service.iws" />
     <ignored path=".idea/workspace.xml" />
