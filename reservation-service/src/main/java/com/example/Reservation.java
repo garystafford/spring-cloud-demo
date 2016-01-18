@@ -21,8 +21,16 @@ class Reservation {
         this.reservationName = reservationName;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getReservationName() {
+        return reservationName;
+    }
+
     @Override
     public String toString() {
-        return "Reservation{id=" + id + ", reservationName='" + reservationName + "'}";
+        return "Reservation{id=" + getId() + ", reservationName='" + getReservationName() + "'}";
     }
 }

@@ -71,6 +71,7 @@ git submodule update
 cd docker-zipkin
 docker-compose up
 
+git submodule update --remote docker-zipkin
 
 Start-up Commands
 =======================

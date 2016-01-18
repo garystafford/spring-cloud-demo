@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9687f0c-268e-47fa-b7d7-d1af601fd348" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/eureka-service.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/hystrix-dashboard.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/reservation-client.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../config-repo/reservation-service.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../config-repo" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/Reservation.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/Reservation.java" />
     </list>
     <ignored path="reservation-service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,12 +36,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.99202126">
+            <state vertical-scroll-proportion="-31.083334">
               <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reservation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Reservation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.59922683">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +89,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/ReservationServiceApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ReservationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ReservationRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/Reservation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ReservationProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Reservation.java" />
       </list>
     </option>
   </component>
@@ -789,12 +800,12 @@
       <workItem from="1452652435129" duration="190000" />
       <workItem from="1452652662420" duration="762000" />
       <workItem from="1452654536708" duration="2053000" />
-      <workItem from="1452874842009" duration="6456000" />
+      <workItem from="1452874842009" duration="7117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49620000" />
+    <option name="totallyTimeSpent" value="50281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -1039,16 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Reservation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44458762">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ReservationServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36726806">
@@ -1061,9 +1062,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.99202126">
+        <state vertical-scroll-proportion="-31.083334">
           <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Reservation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59922683">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

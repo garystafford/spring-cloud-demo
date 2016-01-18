@@ -1,0 +1,15 @@
+gstafford@nagstaffo:spring-cloud-demo$ docker images
+REPOSITORY                    TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+redis                         latest              8bccd73928d9        10 days ago         151.3 MB
+openzipkin/zipkin-cassandra   1.30.0              8bbc92bceff0        11 days ago         221.9 MB
+openzipkin/zipkin-web         1.30.0              c854ecbcef86        11 days ago         155.1 MB
+openzipkin/zipkin-query       1.30.0              f0c45a26988a        11 days ago         180.3 MB
+openzipkin/zipkin-collector   1.30.0              5fcf0ba455a0        11 days ago         183.8 MB
+
+gstafford@nagstaffo:spring-cloud-demo$ docker ps -a
+CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS                      PORTS                                                       NAMES
+5dfbd39eefe9        redis                                "/entrypoint.sh redis"   2 minutes ago       Up 2 minutes                0.0.0.0:6379->6379/tcp                                      dockerredis_redis_1
+4a28f4855d8e        openzipkin/zipkin-web:1.30.0         "/usr/local/bin/run"     5 days ago          Up About a minute           0.0.0.0:8080->8080/tcp, 0.0.0.0:9990->9990/tcp              dockerzipkin_web_1
+1f7fbc45c38b        openzipkin/zipkin-query:1.30.0       "/usr/local/bin/run.s"   5 days ago          Exited (1) 57 seconds ago                                                               dockerzipkin_query_1
+be98092b73e2        openzipkin/zipkin-collector:1.30.0   "/usr/local/bin/run.s"   5 days ago          Up About a minute           0.0.0.0:9410->9410/tcp, 0.0.0.0:9900->9900/tcp              dockerzipkin_collector_1
+12f236a4eac1        openzipkin/zipkin-cassandra:1.30.0   "/bin/sh -c /usr/loca"   5 days ago          Up About a minute           7000-7001/tcp, 7199/tcp, 9160/tcp, 0.0.0.0:9042->9042/tcp   dockerzipkin_cassandra_1
