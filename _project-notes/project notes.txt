@@ -41,6 +41,9 @@ Config Repo
 git submodule add git@github.com:garystafford/spring-cloud-demo-config-repo.git
 git submodule init
 git submodule update
+java.lang.IllegalStateException: No .git directory at file:/Users/gstaffo/Documents/projects/spring-cloud-demo/spring-cloud-demo-config-repo
+
+submodule won't work!
 
 
 Redis
