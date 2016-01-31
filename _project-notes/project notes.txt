@@ -90,13 +90,17 @@ Start-up Commands
 =======================
 export PROJECT_HOME=/Users/gstaffo/Documents/projects
 
-Docker Quickstart Terminal
+# Spotlight Search: Docker Quickstart Terminal
 cd ${PROJECT_HOME}/spring-cloud-demo/redis-config-server/
 docker-compose up
 
-Docker Quickstart Terminal
+# Spotlight Search: Docker Quickstart Terminal
 cd ${PROJECT_HOME}/spring-cloud-demo/docker-zipkin/
 docker-compose up
+
+cd ${PROJECT_HOME}/spring-cloud-demo/h2-server
+# java -cp h2*.jar org.h2.tools.Server -?
+java -cp h2*.jar org.h2.tools.Server -webPort 8506
 
 cd ${PROJECT_HOME}/spring-cloud-demo/config-server
 mvn clean package spring-boot:run
@@ -137,3 +141,7 @@ https://spring.io/blog/2015/01/13/configuring-it-all-out-or-12-factor-app-style-
 https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html
 
 ** https://spring.io/blog/2015/01/20/microservice-registration-and-discovery-with-spring-cloud-and-netflix-s-eureka
+
+h2:
+http://www.mkyong.com/spring/spring-embedded-database-examples/
+http://www.h2database.com/html/cheatSheet.html

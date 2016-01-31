@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3c81a55-b660-422a-b73b-fe4d7202aa58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reservation-service/src/main/resources/application.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../config-server/target/classes/.application.properties.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../_project-notes/project notes.txt" afterPath="$PROJECT_DIR$/../_project-notes/project notes.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../reservation-service/.idea/libraries/Maven__com_h2database_h2_1_4_190.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../config-server/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -12,13 +10,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hystrix-dashboard/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../hystrix-dashboard/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hystrix-dashboard/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../hystrix-dashboard/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../reservation-client/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/ReservationApiGatewayRestController.java" afterPath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/ReservationApiGatewayRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../reservation-client/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../reservation-service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/pom.xml" afterPath="$PROJECT_DIR$/../reservation-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/reservation-service.iml" afterPath="$PROJECT_DIR$/../reservation-service/reservation-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/target/classes/application.properties" afterPath="$PROJECT_DIR$/../reservation-service/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../reservation-service/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/src/main/java/com/example/Reservation.java" afterPath="$PROJECT_DIR$/../reservation-service/src/main/java/com/example/Reservation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../reservation-service/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../reservation-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     </list>
     <ignored path="eureka-server.iws" />
@@ -800,7 +794,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

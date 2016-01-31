@@ -1,5 +1,5 @@
 com/example/ReservationRepository.class
-com/example/ReservationServiceApplication.class
 com/example/Reservation.class
+com/example/ReservationServiceApplication.class
 com/example/ReservationProcessor.class
 com/example/ReservationRestController.class
