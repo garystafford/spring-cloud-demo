@@ -62,7 +62,8 @@ class ReservationApiGatewayRestController {
                 new ParameterizedTypeReference<Resources<Reservation>>() {
                 };
 
-        return this.restTemplate.exchange("http://reservation-service/reservations", GET, null, ptr)
+        return this.restTemplate.exchange(
+                "http://reservation-service/reservations", GET, null, ptr)
                 .getBody()
                 .getContent()
                 .stream()
@@ -70,13 +71,15 @@ class ReservationApiGatewayRestController {
                 .collect(toList());
     }
 
-@RequestMapping(path = "/client-message", method = RequestMethod.GET)
-public String getMessage() {
-    return this.message;
-}
+    @RequestMapping(path = "/client-message", method = RequestMethod.GET)
+    public String getMessage() {
+        return this.message;
+    }
 
-@RequestMapping(path = "/service-message", method = RequestMethod.GET)
-public String getReservationServiceMessage() {
-    return this.restTemplate.getForObject("http://reservation-service/message", String.class);
-}
+    @RequestMapping(path = "/service-message", method = RequestMethod.GET)
+    public String getReservationServiceMessage() {
+        return this.restTemplate.getForObject(
+                "http://reservation-service/message",
+                String.class);
+    }
 }

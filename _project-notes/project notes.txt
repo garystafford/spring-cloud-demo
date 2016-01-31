@@ -95,29 +95,29 @@ cd ${PROJECT_HOME}/spring-cloud-demo/redis-config-server/
 docker-compose up
 
 Docker Quickstart Terminal
-cd cd ${PROJECT_HOME}/spring-cloud-demo/docker-zipkin/
+cd ${PROJECT_HOME}/spring-cloud-demo/docker-zipkin/
 docker-compose up
 
-cd cd ${PROJECT_HOME}/spring-cloud-demo/config-server
+cd ${PROJECT_HOME}/spring-cloud-demo/config-server
 mvn clean package spring-boot:run
 
-cd cd ${PROJECT_HOME}/spring-cloud-demo/eureka-server
+cd ${PROJECT_HOME}/spring-cloud-demo/eureka-server
 mvn clean package spring-boot:run
 
-cd cd ${PROJECT_HOME}/spring-cloud-demo/hystrix-dashboard
+cd ${PROJECT_HOME}/spring-cloud-demo/hystrix-dashboard
 mvn clean package spring-boot:run
 
-cd cd ${PROJECT_HOME}/spring-cloud-demo/reservation-service
+cd ${PROJECT_HOME}/spring-cloud-demo/reservation-service
 mvn clean package
 mvn spring-boot:run -Drun.jvmArguments='-Dserver.port=8000'
 
-cd cd ${PROJECT_HOME}/spring-cloud-demo/reservation-service
+cd ${PROJECT_HOME}/spring-cloud-demo/reservation-service
 mvn spring-boot:run -Drun.jvmArguments='-Dserver.port=8001'
 
-cd cd ${PROJECT_HOME}/spring-cloud-demo/reservation-service
+cd ${PROJECT_HOME}/spring-cloud-demo/reservation-service
 mvn spring-boot:run -Drun.jvmArguments='-Dserver.port=8002'
 
-cd cd ${PROJECT_HOME}/spring-cloud-demo/reservation-client
+cd ${PROJECT_HOME}/spring-cloud-demo/reservation-client
 mvn clean package spring-boot:run
 
 

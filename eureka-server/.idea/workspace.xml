@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3c81a55-b660-422a-b73b-fe4d7202aa58" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../reservation-service/src/main/resources/application.properties" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../reservation-service/src/main/resources/application.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../config-server/target/classes/.application.properties.swp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../_project-notes/project notes.txt" afterPath="$PROJECT_DIR$/../_project-notes/project notes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../config-server/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/target/classes/application.properties" afterPath="$PROJECT_DIR$/../config-server/target/classes/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../config-server/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
@@ -14,11 +13,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hystrix-dashboard/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../hystrix-dashboard/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../reservation-client/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/ReservationApiGatewayRestController.java" afterPath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/ReservationApiGatewayRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/ReservationClientApplication.java" afterPath="$PROJECT_DIR$/../reservation-client/src/main/java/com/example/ReservationClientApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-client/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../reservation-client/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../reservation-service/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/src/main/java/com/example/ReservationServiceApplication.java" afterPath="$PROJECT_DIR$/../reservation-service/src/main/java/com/example/ReservationServiceApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/pom.xml" afterPath="$PROJECT_DIR$/../reservation-service/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/reservation-service.iml" afterPath="$PROJECT_DIR$/../reservation-service/reservation-service.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/target/classes/application.properties" afterPath="$PROJECT_DIR$/../reservation-service/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../reservation-service/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reservation-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../reservation-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
     </list>
     <ignored path="eureka-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +42,40 @@
     <favorites_list name="eureka-server" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="EurekaServerApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/EurekaServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main4.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/main4.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="38" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -752,7 +786,7 @@
       <workItem from="1452386888571" duration="9192000" />
       <workItem from="1452576692984" duration="1511000" />
       <workItem from="1452646420804" duration="640000" />
-      <workItem from="1453133031955" duration="2895000" />
+      <workItem from="1453133031955" duration="3592000" />
     </task>
     <servers />
   </component>
@@ -762,11 +796,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14238000" />
+    <option name="totallyTimeSpent" value="14935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -779,7 +813,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -864,13 +898,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/EurekaServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15463917">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main4.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
