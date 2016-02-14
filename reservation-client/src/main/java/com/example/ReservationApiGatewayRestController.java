@@ -62,6 +62,23 @@ class ReservationApiGatewayRestController {
                 new ParameterizedTypeReference<Resources<Reservation>>() {
                 };
 
+        int pauseAmount = pauseResponse();
+        System.out.printf("\nPause Amount: %d%n\n", pauseAmount);
+        if (pauseAmount > 500) {
+            try {
+                throw new InterruptedException();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } else {
+            try {
+                wait(pauseAmount);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.printf("\nSuccess\n");
+
         return this.restTemplate.exchange(
                 "http://reservation-service/reservations", GET, null, ptr)
                 .getBody()
@@ -81,5 +98,15 @@ class ReservationApiGatewayRestController {
         return this.restTemplate.getForObject(
                 "http://reservation-service/message",
                 String.class);
+    }
+
+    private Integer pauseResponse() {
+        //Create random number 1 - 1500
+        double randNumber = Math.random();
+        double d = randNumber * 1500;
+
+        //Type cast double to int
+        int randomInt = (int) d + 1;
+        return randomInt;
     }
 }
