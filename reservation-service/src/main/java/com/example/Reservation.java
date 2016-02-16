@@ -31,6 +31,6 @@ class Reservation {
 
     @Override
     public String toString() {
-        return "Reservation { id=" + getId() + ", reservationName='" + getReservationName() + "' }";
+        return String.format("Reservation { id=%d, reservationName='%s' }", getId(), getReservationName());
     }
 }

@@ -145,3 +145,5 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-ext
 h2:
 http://www.mkyong.com/spring/spring-embedded-database-examples/
 http://www.h2database.com/html/cheatSheet.html
+
+http://ufasoli.blogspot.com/2014/02/spring-boot-and-spring-data-jpa_6.html

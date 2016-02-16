@@ -15,3 +15,16 @@ mvn clean package spring-boot:run -Drun.jvmArguments='-Dserver.port=8001'
 gstafford@nagstaffo:~$ docker exec -it dockerredis_redis_1 /bin/bash
 root@fe0396908e29:/data# redis-cli
 127.0.0.1:6379> monitor
+
+
+SCRIPT NODATA;
+SELECT * FROM RESERVATION;
+DROP TABLE RESERVATION;
+CREATE TABLE RESERVATION (
+  ID BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  RESERVATION_NAME VARCHAR(255) NOT NULL
+);
+
+SELECT * FROM RESERVATION;
+DELETE FROM RESERVATION;
+DROP TABLE RESERVATION;

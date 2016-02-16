@@ -62,22 +62,18 @@ class ReservationApiGatewayRestController {
                 new ParameterizedTypeReference<Resources<Reservation>>() {
                 };
 
+        // Simulates response latency and service failures for Hystrix
         int pauseAmount = pauseResponse();
-        System.out.printf("\nPause Amount: %d%n\n", pauseAmount);
-        if (pauseAmount > 500) {
-            try {
+        System.out.printf("\nResponse pause amount: %d%n\n", pauseAmount);
+        try {
+            if (pauseAmount > 1000) { // if pause is > 1s throw exception
                 throw new InterruptedException();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        } else {
-            try {
+            } else {
                 wait(pauseAmount);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        System.out.printf("\nSuccess\n");
 
         return this.restTemplate.exchange(
                 "http://reservation-service/reservations", GET, null, ptr)
@@ -100,13 +96,13 @@ class ReservationApiGatewayRestController {
                 String.class);
     }
 
-    private Integer pauseResponse() {
-        //Create random number 1 - 1500
+    private int pauseResponse() {
+        //Create random number 1 - 2000
         double randNumber = Math.random();
-        double d = randNumber * 1500;
+        double pauseMilliseconds = randNumber * 2000;
 
         //Type cast double to int
-        int randomInt = (int) d + 1;
-        return randomInt;
+        int pauseAmount = (int) pauseMilliseconds + 1;
+        return pauseAmount;
     }
 }
