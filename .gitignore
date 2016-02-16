@@ -8,6 +8,7 @@
 
 ## Directory-based project format:
 .idea/
+**/.idea/
 /.idea/
 # if you remove the above rule, at least ignore the following:
 
@@ -68,3 +69,5 @@ fabric.properties
 hs_err_pid*
 
 /target/
+target/
+**/target/
