@@ -7,6 +7,13 @@ Getting Started with Spring Cloud, by Josh Long and Dr. Dave Syer, provides an e
 
 The accompanying post examines the technologies, components, code, and configuration presented in Getting Started with Spring Cloud. The goal of the post is to provide a greater understanding of the Spring Cloud and Spring Cloud Netflix technologies.
 
+To clone project locally:
+```
+git clone https://github.com/garystafford/spring-cloud-demo-config-repo.git
+
+git clone --recursive https://github.com/garystafford/spring-cloud-demo.git
+```
+
 ![Overall System Diagram](https://programmaticponderings.files.wordpress.com/2016/01/overall-system-diagram.png "Overall System Diagram")
 
 The presentation’s example introduces a dizzying array of technologies, which include:
