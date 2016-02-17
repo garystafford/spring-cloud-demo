@@ -3,7 +3,9 @@ _Explore the integration of Spring Cloud and Spring Cloud Netflix tooling, throu
 
 Project repository for blog post: [Diving Deeper into ‘Getting Started with Spring Cloud’](http://wp.me/p1RD28-1N1)   
 
-Getting Started with Spring Cloud, by Josh Long and Dr. Dave Syer, provides an excellent end-to-end technical overview of the latest Spring and Netflix technologies, available on YouTube, was given at SpringOne2GX 2015. The post, examines the technologies, components, code, and configuration presented in Getting Started with Spring Cloud. The goal of the post is to provide a greater understanding of the Spring Cloud and Spring Cloud Netflix technologies.
+Getting Started with Spring Cloud, by Josh Long and Dr. Dave Syer, provides an excellent end-to-end technical overview of the latest Spring and Netflix technologies. The presentation, available on YouTube, was given at SpringOne2GX 2015.
+
+The accompanying post examines the technologies, components, code, and configuration presented in Getting Started with Spring Cloud. The goal of the post is to provide a greater understanding of the Spring Cloud and Spring Cloud Netflix technologies.
 
 ![Overall System Diagram](https://programmaticponderings.files.wordpress.com/2016/01/overall-system-diagram.png "Overall System Diagram")
 
