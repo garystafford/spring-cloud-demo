@@ -17,7 +17,7 @@ git clone --recursive https://github.com/garystafford/spring-cloud-demo.git
 
 #### System Overview
 
-![Overall System Diagram](https://programmaticponderings.files.wordpress.com/2016/02/overall-reservation-system-diagram.png "Overall System Diagram")
+![Overall System Diagram](https://programmaticponderings.files.wordpress.com/2016/02/reservation-system-diagram.png "Overall System Diagram")
 
 The presentation’s example introduces a dizzying array of technologies, which include:
 
