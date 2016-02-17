@@ -11,9 +11,9 @@ The accompanying post examines the technologies, components, code, and configura
 To clone project locally:
 ```
 git clone https://github.com/garystafford/spring-cloud-demo-config-repo.git
-
 git clone --recursive https://github.com/garystafford/spring-cloud-demo.git
 ```
+
 
 #### System Overview
 
