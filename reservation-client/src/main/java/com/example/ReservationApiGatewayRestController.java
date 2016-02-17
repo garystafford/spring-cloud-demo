@@ -1,6 +1,7 @@
 package com.example;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -54,26 +55,19 @@ class ReservationApiGatewayRestController {
         return emptyList();
     }
 
-    @HystrixCommand(fallbackMethod = "getReservationNameFallback")
+    public String getReservationServiceMessageFallback() {
+        return "Unable to contact Reservation Service";
+    }
+
+    @HystrixCommand(fallbackMethod = "getReservationNameFallback", commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+    })
     @RequestMapping(path = "/names", method = RequestMethod.GET)
     public Collection<String> getReservationNames() {
 
         ParameterizedTypeReference<Resources<Reservation>> ptr =
                 new ParameterizedTypeReference<Resources<Reservation>>() {
                 };
-
-        // Simulates response latency and service failures for Hystrix
-        int pauseAmount = pauseResponse();
-        System.out.printf("\nResponse pause amount: %d%n\n", pauseAmount);
-        try {
-            if (pauseAmount > 1000) { // if pause is > 1s throw exception
-                throw new InterruptedException();
-            } else {
-                wait(pauseAmount);
-            }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
         return this.restTemplate.exchange(
                 "http://reservation-service/reservations", GET, null, ptr)
@@ -89,20 +83,13 @@ class ReservationApiGatewayRestController {
         return this.message;
     }
 
+    @HystrixCommand(fallbackMethod = "getReservationServiceMessageFallback", commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+    })
     @RequestMapping(path = "/service-message", method = RequestMethod.GET)
     public String getReservationServiceMessage() {
         return this.restTemplate.getForObject(
                 "http://reservation-service/message",
                 String.class);
-    }
-
-    private int pauseResponse() {
-        //Create random number 1 - 2000
-        double randNumber = Math.random();
-        double pauseMilliseconds = randNumber * 2000;
-
-        //Type cast double to int
-        int pauseAmount = (int) pauseMilliseconds + 1;
-        return pauseAmount;
     }
 }
