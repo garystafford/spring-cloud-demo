@@ -91,7 +91,7 @@ Package applications with dependencies into standardized Linux containers
 [http://localhost:8010/hystrix.html](http://localhost:8010/hystrix.html)  
 
 **Zipkin**  
-[http://localhost:8080](http://localhost00:8080])  
+[http://localhost:8080](http://localhost00:8080)  
 [http://192.168.99.101:9990/admin](http://192.168.99.101:9990/admin)  
 
 **H2**
