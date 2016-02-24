@@ -80,7 +80,7 @@ Package applications with dependencies into standardized Linux containers
 [http://localhost:8050/reservations/client-message](http://localhost:8050/reservations/client-message)  
 
 **Eureka Server**  
-[http://localhost:8761]  
+[http://localhost:8761](http://localhost:8761)  
 
 **Spring Cloud Config**  
 [http://localhost:8888/reservation-service/master](http://localhost:8888/reservation-service/master)  
