@@ -65,31 +65,30 @@ Package applications with dependencies into standardized Linux containers
 
 
 #### Project URLs
-**Reservation Service**
+**Reservation Service**  
 http://localhost:8000/reservations  
 http://localhost:8000/reservations/search/by-name?rn=Amit  
 http://192.168.99.1:8000/configprops  
 http://192.168.99.1:8000/metrics  
 http://192.168.99.1:8000/health  
 
-**Reservation Client**
+**Reservation Client**  
 http://localhost:8050/reservation-service/reservations  
 http://localhost:8050/reservations/names  
 http://localhost:8050/reservations  
 http://localhost:8050/reservations/service-message  
 http://localhost:8050/reservations/client-message  
 
-**Eureka Server**
+**Eureka Server**  
 http://localhost:8761
 
-**Spring Cloud Config**
+**Spring Cloud Config**  
 http://localhost:8888/reservation-service/master  
 http://localhost:8888/reservation-client/master  
 
-**Hystrix Dashboard**
+**Hystrix Dashboard**  
 http://localhost:8050/hystrix.stream  
 http://localhost:8010/hystrix.html  
 
-
-**Zipkin**
+**Zipkin**  
 http://192.168.99.100:8080  
