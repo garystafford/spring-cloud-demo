@@ -68,9 +68,9 @@ Package applications with dependencies into standardized Linux containers
 **Reservation Service**  
 [http://localhost:8000/reservations](http://localhost:8000/reservations)  
 [http://localhost:8000/reservations/search/by-name?rn=Amit](http://localhost:8000/reservations/search/by-name?rn=Amit)  
-[http://192.168.99.1:8000/configprops](http://192.168.99.1:8000/configprops)  
-[http://192.168.99.1:8000/metrics](http://192.168.99.1:8000/metrics)  
-[http://192.168.99.1:8000/health](http://192.168.99.1:8000/health)  
+[http://localhost:8000/configprops](http://localhost:8000/configprops)  
+[http://localhost:8000/metrics](http://localhost:8000/metrics)  
+[http://localhost:8000/health](http://localhost:8000/health)  
 
 **Reservation Client**  
 [http://localhost:8050/reservation-service/reservations](http://localhost:8050/reservation-service/reservations)  
@@ -91,4 +91,8 @@ Package applications with dependencies into standardized Linux containers
 [http://localhost:8010/hystrix.html](http://localhost:8010/hystrix.html)  
 
 **Zipkin**  
-[http://192.168.99.100:8080](http://192.168.99.100:8080])  
+[http://localhost00:8080](http://localhost00:8080])
+[http://192.168.99.101:9990/admin](http://192.168.99.101:9990/admin)
+
+**H2**
+[http://192.168.99.1:6889](http://192.168.99.1:6889)
